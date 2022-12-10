@@ -1,0 +1,27 @@
+{
+  "cma": {
+    "event": {
+      "task_config": {
+        "inlinestr": "prefix{meta.foo}suffix",
+        "array": "{[$.meta.foo]}",
+        "object": "{$.meta}"
+      },
+      "cumulus_meta": {
+        "message_source": "local",
+        "id": "id-1234",
+        "message_bucket": "pq-test"
+      },
+      "meta": {
+        "foo": "bar"
+      },
+      "payload": {
+        "anykey": "anyvalue"
+      },
+      "replace": {
+        "Bucket": "pq-test",
+        "Key": "configured_input.json",
+        "TargetPath": "$.meta"
+      }
+    }
+  }
+}

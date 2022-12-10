@@ -1,0 +1,23 @@
+{
+  "task_config": {
+    "inlinestr": "prefix{meta.foo}suffix",
+    "array": "{[$.meta.foo]}",
+    "object": "{$.meta}"
+  },
+  "cumulus_meta": {
+    "message_source": "local",
+    "id": "id-1234"
+  },
+  "meta": {
+    "foo": "bar"
+  },
+  "payload": {
+    "input": { "anykey": "anyvalue" },
+    "config": {
+      "inlinestr": "prefixbarsuffix",
+      "array": ["bar"],
+      "object": { "foo": "bar" }
+    }
+  },
+  "exception": "None"
+}

@@ -1,0 +1,17 @@
+{
+  "task_config": {
+    "bar": "baz"
+  },
+  "cumulus_meta": {
+    "message_source": "local",
+    "id": "id-1234"
+  },
+  "meta": {
+    "foo": "bar"
+  },
+  "payload": {
+    "input": { "anykey": "anyvalue" },
+    "config": { "bar": "baz" }
+  },
+  "exception": "None"
+}

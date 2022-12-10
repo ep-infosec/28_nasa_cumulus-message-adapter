@@ -1,0 +1,26 @@
+{
+  "task_config": {
+    "inlinestr": "prefix{meta.foo.someKey}suffix",
+    "array": "{[$.meta.foo.someKey]}",
+    "object": "{$.meta.foo}"
+  },
+  "cumulus_meta": {
+    "message_source": "local",
+    "id": "id-1234",
+    "message_bucket": "pq-test"
+  },
+  "meta": {
+      "foo": {
+        "someKey": "someData"
+      }
+  },
+  "payload": {
+    "input": { "anykey": "anyvalue" },
+    "config": {
+      "inlinestr": "prefixsomeDatasuffix",
+      "array": ["someData"],
+      "object": { "someKey": "someData" }
+    }
+  },
+  "exception": "None"
+}
